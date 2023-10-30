@@ -41,11 +41,13 @@
     <script>
 
         $(document).ready(function () {
+            console.log("ready: in");
             const liffId = "2001235536-E5p65zAY";
             initializeLiff(liffId);
         })
 
         function initializeLiff(liffId) {
+            console.log("initializeLiff: liffId:"+liffId);
             liff.init({
                 liffId: liffId
             }).then(() => {
@@ -56,6 +58,7 @@
         }
 
         function sendText(text) {
+            console.log("sendText: text:"+text);
             liff.sendMessages([{
                 'type': 'text',
                 'text': text
@@ -77,6 +80,7 @@
                 const keika  = $('input[name="keika"]').val();
                 const hatunetu = $('input[name="hatunetu"]').val();
                 const msg = `${name}\n${bangou}\n${shushoujou}\n${keika}\n${hatunetu}`;
+                console.log("form submit: msg:"+msg);
                 sendText(msg);
                 return false;
             });
