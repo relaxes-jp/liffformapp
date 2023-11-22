@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<style>
+		span {color:red;}
+	</style>
 </head>
 <body>
-	<p class="mt-1">店内在庫検索</p>
     <form class="w-75 mx-auto">
-        <p class="mt-3">商品コード(<span font-color="red">*</span>)</p>
+		<p class="mt-3 font-weight-bold">店内在庫検索</p>
+		<p class="mt-3">検索したい商品コード、カラーID、サイズID、サブコードを入力</p>
+        <p class="mt-3">商品コード</p>
         <div>
             <input class="form-control w-100 mt-1" name="code" placeholder="148" required>
         </div>
@@ -26,7 +30,7 @@
         <div>
             <input class="form-control w-100 mt-1" name="subcode" placeholder="14800503">
         </div>
-        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+        <input type="submit" class="mt-4 btn btn-primary" value="検索">
     </form>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
