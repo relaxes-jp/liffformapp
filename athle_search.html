@@ -61,7 +61,7 @@
         $(function () {
             $('form').submit(function () {
                 const subcode = $('input[name="subcode"]').val();
-                const msg = `search\n${subcode}`;
+                const msg = `athle_search\n${subcode}`;
                 sendText(msg);
                 return false;
             });
